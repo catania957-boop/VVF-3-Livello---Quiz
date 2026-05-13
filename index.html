@@ -8,19 +8,10 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="VVF Quiz L3">
-<link id="pwa-manifest" rel="manifest">
+<link rel="manifest" href="./manifest.json">
 <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJyBoZWlnaHQ9JzEwMCcgcng9JzIwJyBmaWxsPScjYjkxYzFjJy8+CiAgPHRleHQgeT0nLjllbScgZm9udC1zaXplPSc3NScgdGV4dC1hbmNob3I9J21pZGRsZScgeD0nNTAnPvCflKU8L3RleHQ+Cjwvc3ZnPg==">
 <title>VVF Quiz — Livello 3</title>
-<script>
-// Inietta manifest come blob URL — funziona sia da browser che da PWA installata
-(function(){
-  try {
-    var mj = JSON.stringify({"name": "VVF Quiz Livello 3", "short_name": "VVF Quiz", "description": "Quiz per Addetto Antincendio Livello 3", "start_url": "./", "scope": "./", "display": "standalone", "orientation": "portrait", "background_color": "#0f0f0f", "theme_color": "#b91c1c", "icons": [{"src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJyBoZWlnaHQ9JzEwMCcgcng9JzIwJyBmaWxsPScjYjkxYzFjJy8+CiAgPHRleHQgeT0nLjllbScgZm9udC1zaXplPSc3NScgdGV4dC1hbmNob3I9J21pZGRsZScgeD0nNTAnPvCflKU8L3RleHQ+Cjwvc3ZnPg==", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any maskable"}, {"src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJz4KICA8cmVjdCB3aWR0aD0nMTAwJyBoZWlnaHQ9JzEwMCcgcng9JzIwJyBmaWxsPScjYjkxYzFjJy8+CiAgPHRleHQgeT0nLjllbScgZm9udC1zaXplPSc3NScgdGV4dC1hbmNob3I9J21pZGRsZScgeD0nNTAnPvCflKU8L3RleHQ+Cjwvc3ZnPg==", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any maskable"}]});
-    var blob = new Blob([mj], {type:'application/manifest+json'});
-    document.getElementById('pwa-manifest').href = URL.createObjectURL(blob);
-  } catch(e) {}
-})();
-</script>
+
 <style>
 :root{
   --red:#b91c1c;--red-d:#991b1b;--red-l:#ef4444;
